@@ -58,10 +58,10 @@ CArray FFT(const Array &x) {
 
 int main(int argc, char **argv) {
   if (argc < 2) {
-    cerr << argv[0] << " <array size (power of two)>" << endl;
+    cerr << argv[0] << " <power of two>" << endl;
     exit(EXIT_FAILURE);
   }
-  const size_t SIZE = stoull(argv[1]);
+  const size_t SIZE = size_t(pow(2, stoull(argv[1])));
   if (log2(double(SIZE)) != floor(log2(double(SIZE)))) {
     cerr << "Size must be a power of two" << endl;
     exit(EXIT_FAILURE);
