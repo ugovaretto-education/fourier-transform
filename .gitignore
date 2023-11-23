@@ -5,3 +5,5 @@ tmp*
 a.out
 *.dSYM
 *.exe
+*.so
+build
