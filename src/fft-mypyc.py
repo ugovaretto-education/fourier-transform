@@ -1,3 +1,4 @@
+# run mypyc fft.py to generate a shared library file fft.**** then import it
 import argparse as ap
 from time import perf_counter
 from fft import inplace_fft
